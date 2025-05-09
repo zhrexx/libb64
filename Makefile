@@ -1,9 +1,7 @@
-all: all_src all_base64
+all: all_src 
 
 all_src:
 	$(MAKE) -C src
-all_base64: all_src
-	$(MAKE) -C base64
 
 clean: clean_src clean_base64 clean_include
 	rm -f *~ *.bak
